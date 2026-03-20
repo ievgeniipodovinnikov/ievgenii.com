@@ -5,11 +5,11 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description"
-        content="Buy premium domains for AI, crypto, and more. Get unique, catchy domain names like stacklead.pro and algoshark.pro.">
-  <title>Premium Domains</title>
+        content="Premium domains for AI, crypto, and more. Personal portfolio of Ievgenii Podovinnikov — QA Automation Engineer, developer, and entrepreneur.">
+  <title>Ievgenii Podovinnikov | QA Engineer & Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* Убираем яркие цвета и используем более мягкие оттенки */
     body {
       background: linear-gradient(45deg, #3b82f6, #6a5acd, #ff6347, #2ecc71);
       background-size: 400% 400%;
@@ -25,19 +25,13 @@
 
     footer {
       color: #aaa;
-      margin-top: auto; /* Закрепляет футер внизу */
+      margin-top: auto;
     }
 
     @keyframes gradientAnimation {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     .card-description {
@@ -52,209 +46,151 @@
       background-color: #000000;
       color: white;
     }
+
+    .modal-content {
+      width: 20rem;
+      padding: 2rem;
+      border-radius: 1rem;
+      background: rgba(24, 24, 27, 0.75);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(100, 100, 100, 0.3);
+    }
+
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+    }
   </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const domainInfo = {
-        "algoshark.pro": {
-          price: 449,
-          description: "Aggressive and powerful name, perfect for algo trading, AI bots, or crypto ventures. With 'shark' in the name, it exudes a sense of strength and competitiveness, making it ideal for projects that are looking to dominate their niche in the financial and technological markets. The '.pro' TLD adds a professional touch, making this domain suitable for high-end businesses and platforms."
-        },
-        "whalewatch.live": {
-          price: 999,
-          description: "A unique and engaging name, great for tracking cryptocurrency whale movements in real-time or monitoring market trends. The '.live' TLD offers an immediate, live feed feel, making it perfect for an active platform that updates its users regularly. Whether it's for crypto analytics or market watching, 'whalewatch' is a name that commands attention."
-        },
-        "viralmind.xyz": {
-          price: 99,
-          description: "The ideal domain for projects focusing on AI, media, and viral content. 'Viralmind' evokes creativity, mental agility, and innovative content strategies. It’s perfect for content creators, viral marketing platforms, or AI-driven media analytics tools. The '.xyz' TLD adds a modern, tech-forward appeal, suitable for startups or forward-thinking businesses."
-        },
-        "mindshark.xyz": {
-          price: 99,
-          description: "A fusion of intellect and power, 'Mindshark' is perfect for AI-driven platforms, crypto projects, or any business where intellectual strength and innovation are key. The name resonates with both intelligence and aggressiveness, making it ideal for a wide range of tech startups. The '.xyz' TLD adds to the futuristic vibe, symbolizing a cutting-edge approach."
-        },
-        "leaktrade.xyz": {
-          price: 99,
-          description: "A strong domain name for a whistleblower hub, alpha group, or darknet market concept. 'Leaktrade' suggests a space for secure transactions or discussions involving insider information. It’s ideal for platforms where confidentiality and anonymity are key factors. With the '.xyz' TLD, this name feels innovative and modern, appealing to those interested in cutting-edge, privacy-focused ventures."
-        },
-        "trustchain.online": {
-          price: 7999,
-          description: "Perfect for blockchain and cryptocurrency-based businesses, 'Trustchain' emphasizes the importance of security, transparency, and trust. Whether you're building a KYC solution, a decentralized app, or a blockchain platform, this name conveys credibility and professionalism. The '.online' TLD makes it ideal for web-based services, adding an accessible feel to the domain."
-        },
-        "stockleak.xyz": {
-          price: 99,
-          description: "A catchy and dynamic name tailored for leak-based financial or trading platforms. Whether it's for alpha signals, insider market info, or stock prediction tools, 'stockleak' has that sharp, slightly edgy tone that makes it stand out. Paired with '.xyz', it has a modern feel ideal for fast-paced fintech startups."
-        },
-        "pumpdump.pro": {
-          price: 399,
-          description: "A bold and aggressive domain perfect for crypto alert services, trading communities, or market signal bots. 'Pumpdump' instantly clicks with audiences familiar with crypto slang, and the '.pro' extension gives it that expert, pro-level vibe — perfect for monetized channels or serious tools in the trading space."
-        },
-        "esportsmania.xyz": {
-          price: 99,
-          description: "An electrifying domain that captures the excitement of sports and gaming. Perfect for online sports communities, live score trackers, fantasy leagues, or sports betting platforms. 'Sportsmania' is a lively, energetic name that conveys passion for sports, paired with the '.xyz' extension to give it a modern edge that appeals to a global audience."
-        },
-        "slotmachinefun.xyz": {
-          price: 99,
-          description: "A fun and engaging domain designed for online casino platforms, slot games, or gambling-related websites. 'Slotmachinefun' instantly evokes excitement and entertainment, making it ideal for creating an interactive gaming experience. With the '.xyz' TLD, it's perfect for a fresh, innovative look in the competitive world of online gaming and casinos."
-        },
-        "swapdex.pro": {
-          "price": 379,
-          "description": "Swapdex is a dynamic and memorable domain name ideal for crypto exchanges, DeFi platforms, or decentralized applications. The '.pro' TLD adds an authoritative and professional touch, making it perfect for a platform that aims to provide top-tier crypto services. 'Swapdex' suggests seamless swapping and trading, resonating with blockchain enthusiasts and traders looking for efficient solutions."
-        },
-        "web3craft.pro": {
-          "price": 349,
-          "description": "A powerful domain tailored for Web3 development tools, decentralized platforms, or blockchain projects. 'Web3craft' reflects the artistry and innovation that drives the Web3 revolution. The '.pro' TLD emphasizes professionalism, making this domain ideal for companies in the cutting-edge space of decentralized technologies, NFTs, and metaverse ventures."
-        },
-        "greenovate.pro": {
-          "price": 199,
-          "description": "A fresh and eco-conscious domain designed for sustainable startups, green energy companies, or environmental initiatives. 'Greenovate' combines 'green' and 'innovate,' making it perfect for organizations focused on sustainability, renewable energy, and green tech solutions. The '.pro' extension enhances its appeal, positioning it as a trusted and professional resource for eco-friendly businesses."
-        },
-        "launchcore.xyz": {
-          "price": 399,
-          "description": "Perfect for a launchpad, dev toolset, or crypto startup accelerator. 'Launchcore' conveys strength, momentum, and a technical edge—ideal for Web3 projects, token platforms, or SaaS startups. The '.xyz' TLD keeps it modern and startup-friendly."
-        },
-        "aiblast.pro": {
-          "price": 649,
-          "description": "A dynamic name for AI newsletters, tools, or high-impact campaigns. 'AIblast' suggests speed, innovation, and boldness in the AI space. With the '.pro' extension, it stands out as a professional-grade domain for serious tech projects."
-        },
-        "brandflow.cloud": {
-          "price": 1119,
-          "description": "A sleek and modern name for branding tools, creative studios, or SaaS dashboards. 'Brandflow' evokes smooth user experience and visual storytelling, while '.cloud' emphasizes its digital-native appeal—perfect for creative platforms and design automation tools."
-        }
-      };
-
-      const domainName = window.location.hostname;
-
-      // Обновляем информацию на карточке и попапе
-      document.getElementById("selectedDomain").textContent = domainName;  // В попапе
-      document.getElementById("cardDomain").textContent = domainName; // На карточке
-
-      // Обновляем описание и цену на карточке
-      const priceElement = document.getElementById("cardPrice");
-      const descriptionElement = document.getElementById("cardDescription");
-
-      if (domainInfo[domainName]) {
-        priceElement.textContent = `$${domainInfo[domainName].price}`;
-        descriptionElement.textContent = domainInfo[domainName].description;
-      } else {
-        priceElement.textContent = "Contact us for pricing"; // Если цена не найдена
-        descriptionElement.textContent = "Description unavailable. Please contact us for more details.";
-      }
-    });
-  </script>
 </head>
 
 <body class="text-white">
 <!-- Header -->
 <header class="text-center py-20 px-4">
-  <h1 class="text-5xl font-bold mb-4 text-white">Stacklead.pro</h1>
-  <p class="text-xl text-gray-400 mb-8">Premium Domains for Future-Driven Ventures</p>
-  <a href="https://stacklead.pro"
-     class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">Browse Domains</a>
+  <h1 class="text-5xl font-bold mb-4 text-white">Ievgenii Podovinnikov</h1>
+  <p class="text-xl text-gray-400 mb-8">Software Engineer • Automation • Product Builder</p>
+  <a href="#about"
+     class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">About Me</a>
 </header>
 
-<!-- Featured Domains -->
-<section id="featured" class="px-6 py-16">
-  <h3 class="text-3xl font-bold text-center mb-12">This domain is for sale</h3>
-
-  <!-- Cryptocurrencies Section -->
-  <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
-
-    <!-- Card 1: Dynamic Domain -->
-    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 relative">
-      <h3 class="text-2xl font-semibold mb-2" id="cardDomain">algoshark.pro</h3>
-      <p class="card-description mb-4" id="cardDescription">Aggressive name for algo trading, crypto, or AI bot
-        ventures.</p>
-      <p class="card-price mb-4" id="cardPrice">$449</p> <!-- Цена будет подставляться здесь -->
-      <button class="mt-4 bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition"
-              onclick="openPopup(document.getElementById('cardDomain').textContent)">Buy Now
-      </button>
-      <!-- Icon -->
-      <img src="img/shark.png" alt="Icon"
-           class="absolute bottom-12 right-8 transform -translate-x-1/2 w-20 h-20 rounded-lg">
+<!-- About Me Section -->
+<section id="about" class="px-6 py-16 max-w-4xl mx-auto">
+  <div class="card rounded-2xl p-8 shadow-lg">
+    <h3 class="text-3xl font-bold mb-4 text-center">👋 About Me</h3>
+    <div class="text-gray-300 space-y-4">
+<p>I solve problems through code. Whether it's automation, backend systems, trading bots, or developer tools — I build things that work.</p>
+<p>With a background in software engineering and a focus on practical results, I take ideas from concept to working product. No fluff, just functional solutions.</p>
+<p>Currently working on <strong class="text-white">QA Helper</strong> — a Chrome extension for bug reporting, and <strong class="text-white">Stacklead.pro</strong> — a premium domain marketplace.</p>
+<p>Need something built? Let's talk.</p>     <div class="flex justify-center gap-6 mt-6">
+        <a href="https://x.com/ipodovinnikov" target="_blank" class="text-white hover:text-gray-300"><i class="fab fa-twitter text-2xl"></i></a>
+      </div>
     </div>
-
   </div>
-
 </section>
 
-<!-- Модальное окно -->
-<div id="buyModal"
-     class="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 backdrop-blur-sm hidden">
-  <div class="modal-content">
-    <h3 class="text-2xl font-semibold text-white mb-4 text-center">
-      Contact to buy <span id="selectedDomain" class="text-blue-600 font-mono"></span>
-    </h3>
-    <p class="text-white mb-4 text-center">Select a contact option:</p>
-    <div class="flex flex-col justify-center gap-4">
-      <a href="https://t.me/Kaiserkrab" target="_blank"
-         class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full text-center">Telegram</a>
-      <a href="https://wa.me/40765263983" target="_blank"
-         class="bg-green-500 text-white px-4 py-2 rounded-lg w-full text-center">WhatsApp</a>
+<!-- Current Projects -->
+<section class="px-6 py-16">
+  <h3 class="text-3xl font-bold text-center mb-12">🚀 Current Projects</h3>
+  <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
+    
+    <!-- QA Helper -->
+    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+      <h3 class="text-2xl font-semibold mb-2">QA Helper</h3>
+      <p class="card-description mb-4">Chrome extension for QA engineers: capture bugs with screenshots, XPath, environment data, and notes. History for last 10 captures.</p>
+      <div class="flex gap-2 mt-4">
+        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+        <span class="bg-purple-600 text-xs px-2 py-1 rounded">Java</span>
+        <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
+      </div>
+      <a href="https://github.com/ievgeniipodovinnikov/qa-helper" target="_blank" class="mt-4 inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">GitHub →</a>
+    </div>
 
-      <!-- Кнопка Namecheap ниже Telegram и WhatsApp и выровнена по центру -->
-      <a href="#" id="namecheapLink"
-         class="bg-yellow-500 text-white px-4 py-2 rounded-lg w-full text-center hover:bg-yellow-400 transition-colors"
-         onclick="openNamecheapLink()">Buy on Namecheap</a>
-      <p class="text-gray-300 text-sm mb-2 text-center italic">We are open to reasonable offers.</p>
-      <button class="text-white bg-red-600 px-4 py-2 rounded-lg w-full" onclick="closePopup()">Close</button>
+    <!-- Stacklead.pro -->
+    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+      <h3 class="text-2xl font-semibold mb-2">Stacklead.pro</h3>
+      <p class="card-description mb-4">Premium domain marketplace for AI, crypto, and Web3 startups. Curated names with high branding potential.</p>
+      <div class="flex gap-2 mt-4">
+        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Domains</span>
+        <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Marketplace</span>
+      </div>
+      <a href="https://stacklead.pro" target="_blank" class="mt-4 inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">Visit →</a>
+    </div>
+</section>
+
+<!-- Past Projects -->
+<section class="px-6 py-16 bg-black bg-opacity-30 rounded-2xl mx-6 mb-8">
+  <h3 class="text-3xl font-bold text-center mb-12">📁 Past Projects</h3>
+  <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
+    
+    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+      <h3 class="text-2xl font-semibold mb-2">Telegram Chatbots API</h3>
+      <p class="card-description mb-4">Custom Telegram bots with API integrations for business automation, customer support, and internal tools.</p>
+      <div class="flex gap-2 mt-4">
+        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Python</span>
+        <span class="bg-teal-600 text-xs px-2 py-1 rounded">Telegram API</span>
+      </div>
+    </div>
+
+    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+      <h3 class="text-2xl font-semibold mb-2">API Test Automation Framework</h3>
+      <p class="card-description mb-4">Java-based framework for REST API testing with custom reporters, CI/CD integration, and data-driven tests.</p>
+      <div class="flex gap-2 mt-4">
+        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Java</span>
+        <span class="bg-red-600 text-xs px-2 py-1 rounded">RestAssured</span>
+        <span class="bg-gray-600 text-xs px-2 py-1 rounded">Jenkins</span>
+      </div>
+    </div>
+
+    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+      <h3 class="text-2xl font-semibold mb-2">Vibe Coding Prototypes</h3>
+      <p class="card-description mb-4">Rapid prototypes for startups — MVPs built in days using modern stacks and AI-assisted development.</p>
+      <div class="flex gap-2 mt-4">
+        <span class="bg-blue-600 text-xs px-2 py-1 rounded">React</span>
+        <span class="bg-green-600 text-xs px-2 py-1 rounded">Node.js</span>
+        <span class="bg-purple-600 text-xs px-2 py-1 rounded">AI Tools</span>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <script>
+  const domainInfo = {
+    "algoshark.pro": { price: 449, description: "Aggressive and powerful name, perfect for algo trading, AI bots, or crypto ventures." }
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const domainName = window.location.hostname;
+    document.getElementById("selectedDomain").textContent = domainName;
+    document.getElementById("cardDomain").textContent = domainName;
+    if (domainInfo[domainName]) {
+      document.getElementById("cardPrice").textContent = `$${domainInfo[domainName].price}`;
+      document.getElementById("cardDescription").textContent = domainInfo[domainName].description;
+    }
+  });
+
   function openPopup(domain) {
-    // Открыть попап
     document.getElementById("buyModal").classList.remove("hidden");
-
-    // Подставить домен в попап
     document.getElementById("selectedDomain").textContent = domain;
-
-    // Подставить домен в ссылку на Namecheap
-    const namecheapLink = document.getElementById("namecheapLink");
-    namecheapLink.href = `https://www.namecheap.com/domains/registration/results/?domain=${domain}`;
+    document.getElementById("namecheapLink").href = `https://www.namecheap.com/domains/registration/results/?domain=${domain}`;
   }
-
-  function closePopup() {
-    // Закрыть попап
-    document.getElementById("buyModal").classList.add("hidden");
-    document.getElementById("selectedDomain").textContent = ""; // Очистить домен в попапе
-  }
-
-  function openNamecheapLink() {
-    const namecheapLink = document.getElementById("namecheapLink");
-    window.open(namecheapLink.href, "_blank"); // Это откроет ссылку в новой вкладке
-  }
+  function closePopup() { document.getElementById("buyModal").classList.add("hidden"); }
+  function openNamecheapLink() { window.open(document.getElementById("namecheapLink").href, "_blank"); }
 </script>
-
-<style>
-  .modal-content {
-    width: 20rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    background: rgba(24, 24, 27, 0.75);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(100, 100, 100, 0.3);
-  }
-</style>
 
 <!-- Footer -->
 <footer class="text-center text-gray-500 text-sm py-10">
-  <!-- Twitter Icon Section -->
   <div class="mt-4 text-xs">
-    <p class="text-sm text-gray-400 mt-2 italic">While we believe the price reflects the value of the domain, we are
-      open to discussing offers for serious buyers.</p>
-    <br>
     <a href="https://x.com/stackleadpro" target="_blank" class="text-white">
       <i class="fab fa-twitter text-xl hover:text-blue-500 transition"></i>
-      <span class="ml-2">Follow us on X</span>
+      <span class="ml-2">Follow me on X</span>
     </a>
   </div>
-
-  <!-- Copyright Section -->
   <div class="mt-2">
-    &copy; 2025 Stacklead.pro. All rights reserved.
+    &copy; 2026 Ievgenii Podovinnikov. All rights reserved.
   </div>
 </footer>
 </body>
