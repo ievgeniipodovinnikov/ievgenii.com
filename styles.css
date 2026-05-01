@@ -14,6 +14,10 @@ header, footer {
   background-color: #000000;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
   color: #aaa;
   margin-top: auto;
@@ -345,4 +349,263 @@ footer {
 .cv-info-row i {
   margin-right: 0.25rem;
   color: #0d9488;
+}
+
+
+
+/* =========================
+   PRODUCTS SECTION
+   clean SaaS + soft web3 glow
+========================= */
+
+.products-section {
+  padding: 4rem 1.5rem;
+}
+
+/* =========================
+   GRID (stable, centered)
+========================= */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   CARD BASE
+========================= */
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+/* soft ambient web3 glow */
+.product-card::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(
+    circle at top left,
+    rgba(45, 212, 191, 0.14),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 0;
+}
+
+/* hover state */
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.product-card:hover {
+  border-color: #2dd4bf;
+  box-shadow: 0 10px 30px rgba(45, 212, 191, 0.10);
+  transform: translateY(-2px);
+}
+
+/* keep content above glow */
+.product-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   TITLE + TEXT
+========================= */
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.product-desc {
+  color: #6b7280;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   PRODUCTS SECTION
+   (clean + soft web3 glow)
+========================= */
+
+.products-section {
+  padding: 4rem 1.5rem;
+}
+
+/* GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  will-change: transform;
+}
+
+/* soft web3 glow */
+.product-card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(45, 212, 191, 0.18),
+    transparent 55%
+  );
+  opacity: 0;
+  filter: blur(20px);
+  transition: opacity 0.35s ease;
+  z-index: 0;
+}
+
+.product-card:hover::before {
+  opacity: 1;
+}
+
+.product-card:hover {
+  border-color: #2dd4bf;
+  box-shadow: 0 12px 35px rgba(45, 212, 191, 0.12);
+  transform: translateY(-3px);
+}
+
+/* keep content above glow */
+.product-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.product-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.product-desc {
+  color: #6b7280;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   LIVE BADGE (NO ANIMATION)
+========================= */
+
+.badge-live {
+  background: rgba(45, 212, 191, 0.18);
+  color: #0f766e;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  transition: all 0.25s ease;
+}
+
+/* hover effect only (no animation) */
+.product-card:hover .badge-live {
+  background: #2dd4bf;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* =========================
+   TECH PILLS
+========================= */
+
+.tech-pill {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  background: #f0fdfa;
+  border: 1px solid #99f6e4;
+  color: #0f766e;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.visit-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.55rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #2dd4bf;
+  color: #0f766e;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.visit-btn:hover {
+  background: #ecfeff;
+}
+
+/* mobile button fix */
+@media (max-width: 768px) {
+  .visit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* =========================
+   MOBILE SAFETY
+========================= */
+
+@media (max-width: 640px) {
+  .product-card {
+    padding: 1.2rem;
+  }
+
+  .product-title {
+    font-size: 1.15rem;
+  }
 }
