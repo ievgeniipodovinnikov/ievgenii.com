@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-      content="Building software, tools, and products. Creator of QA Helper, Earthquake Monitor, and Stacklead.pro. Turning ideas into working solutions.">
+    content="Building software, tools, and products. Creator of QA Helper, Earthquake Monitor, and Stacklead.pro. Turning ideas into working solutions.">
   <title>Ievgenii Podovinnikov | QA Engineer & Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -13,338 +13,394 @@
 </head>
 
 <body class="text-white">
-<!-- Header -->
-<header class="text-center py-20 px-4">
-  <h1 class="text-5xl font-bold mb-4 text-white">Ievgenii Podovinnikov</h1>
-  <p class="text-xl text-gray-400 mb-8">Software Engineer • Automation • Product Builder</p>
-<div class="flex flex-wrap justify-center gap-4">
-  <a href="#about" class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">About Me</a>
-  <a href="#products" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">Products</a>
-  <a href="#extensions" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">Chrome Extensions</a>
-  <a href="cv.html" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">CV</a>
-</div>
-</header>
+  <!-- Header -->
+  <header class="text-center py-20 px-4">
+    <h1 class="text-5xl font-bold mb-4 text-white">Ievgenii Podovinnikov</h1>
+    <p class="text-xl text-gray-400 mb-8">Software Engineer • Automation • Product Builder</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#about" class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">About
+        Me</a>
+      <a href="#products"
+        class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">Products</a>
+      <a href="#extensions"
+        class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">Chrome
+        Extensions</a>
+      <a href="cv.html"
+        class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition">CV</a>
+    </div>
+  </header>
 
-<!-- About Me Section -->
-<section id="about" class="px-6 py-16 max-w-4xl mx-auto">
-  <div class="card rounded-2xl p-8 shadow-lg">
-    <h3 class="text-3xl font-bold mb-4 text-center">👋 About Me</h3>
-    <div class="text-gray-300 space-y-4">
-      <p>I write code that actually does something useful. Automation, backend systems, trading infrastructure, dev tools — you name it.</p>
-      <p>Open for freelance, consulting, or just chatting about interesting problems.</p>
-      
-      <div class="flex justify-center gap-8 mt-8">
-        <a href="https://x.com/ipodovinnikov" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-white transition">
-          <i class="fab fa-twitter text-2xl"></i>
+  <!-- About Me Section -->
+  <section id="about" class="px-6 py-16 max-w-4xl mx-auto">
+    <div class="card rounded-2xl p-8 shadow-lg">
+      <h3 class="text-3xl font-bold mb-4 text-center">👋 About Me</h3>
+      <div class="text-gray-300 space-y-4">
+        <p>I write code that actually does something useful. Automation, backend systems, trading infrastructure, dev
+          tools — you name it.</p>
+        <p>Open for freelance, consulting, or just chatting about interesting problems.</p>
+
+        <div class="flex justify-center gap-8 mt-8">
+          <a href="https://x.com/ipodovinnikov" target="_blank" rel="noopener noreferrer"
+            class="text-gray-300 hover:text-white transition">
+            <i class="fab fa-twitter text-2xl"></i>
+          </a>
+          <a href="mailto:me@ievgenii.com" class="text-gray-300 hover:text-white transition">
+            <i class="fas fa-envelope text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="products-section">
+    <h3 class="text-3xl font-bold text-center mb-12">💡 Products</h3>
+
+    <div class="product-grid">
+
+      <!-- 2MinPay -->
+      <div class="product-card group">
+        <div class="flex justify-between items-center">
+          <div class="product-title">2MinPay</div>
+          <span class="badge-live live-badge">Live</span>
+        </div>
+
+        <div class="product-desc">
+          Monetization infrastructure for developers. Stripe-based abstraction to integrate payments in minutes.
+        </div>
+
+        <div class="flex gap-2 flex-wrap">
+          <span class="tech-pill">Stripe</span>
+          <span class="tech-pill">Payments</span>
+          <span class="tech-pill">SDK</span>
+        </div>
+
+        <a href="https://2minpay.com" target="_blank" class="visit-btn">
+          Visit →
         </a>
-        <a href="mailto:me@ievgenii.com" class="text-gray-300 hover:text-white transition">
-          <i class="fas fa-envelope text-2xl"></i>
+      </div>
+
+      <!-- SynthDataGen -->
+      <div class="product-card group">
+        <div class="flex justify-between items-center">
+          <div class="product-title">SynthDataGen</div>
+          <span class="badge-live live-badge">Live</span>
+        </div>
+
+        <div class="product-desc">
+          Synthetic data generation tool for QA and AI testing. Build realistic datasets instantly.
+        </div>
+
+        <div class="flex gap-2 flex-wrap">
+          <span class="tech-pill">Data</span>
+          <span class="tech-pill">QA</span>
+          <span class="tech-pill">AI</span>
+        </div>
+
+        <a href="https://synthdatagen.xyz" target="_blank" class="visit-btn">
+          Visit →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="extensions" class="px-6 py-16">
+    <h3 class="text-3xl font-bold text-center mb-12">🚀 Chrome Extensions</h3>
+    <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
+
+      <!-- RetroDeck - Konami-style retro game collection -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <div class="flex justify-between items-start">
+          <h3 class="text-2xl font-semibold mb-2">🎮 RetroDeck</h3>
+          <span class="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Playable</span>
+        </div>
+        <p class="card-description mb-4">Retro game collection as Chrome extension — Snake (Nokia style), Road Fighter,
+          Flappy Bird, Life Force, Asteroids, Pinball, Space Invaders. Zero ROMs, 100% self-written JavaScript,
+          offline-ready. Pick a card, play instantly.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">Vanilla JS</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">Canvas API</span>
+          <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Offline-first</span>
+          <span class="bg-red-600 text-xs px-2 py-1 rounded">7 games</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://chromewebstore.google.com/detail/retrodeck/bnbffpanpbnmedfnpmbbaoegfkhbopcj" target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Fast API Tester -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <div class="flex justify-between items-start">
+          <h3 class="text-2xl font-semibold mb-2">⚡ Fast API Tester</h3>
+          <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Live!</span>
+        </div>
+        <p class="card-description mb-4">Lightweight Chrome extension for testing API endpoints. Supports
+          GET/POST/PUT/DELETE/PATCH, custom headers, query parameters, JSON/Form/Text body, and stores last 10 requests
+          with full history. Copy response, URL, or generate cURL commands instantly.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">REST API</span>
+          <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Fetch API</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://chromewebstore.google.com/detail/fast-api-tester/figccmomgjinafphjmodpjpgkbiloicj"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Earthquake Monitor -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <h3 class="text-2xl font-semibold mb-2">🌍 Earthquake Monitor</h3>
+        <p class="card-description mb-4">Chrome extension that tracks earthquakes in real-time. Shows earthquakes within
+          a specified radius from your location with configurable magnitude threshold and instant notifications.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-red-600 text-xs px-2 py-1 rounded">USGS API</span>
+          <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Geolocation</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://chromewebstore.google.com/detail/earthquake-monitor/akmnogijjjfdhcgpnmbplkinmogmnhkj"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Crypto Pulse -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <div class="flex justify-between items-start">
+          <h3 class="text-2xl font-semibold mb-2">📈 Crypto Pulse</h3>
+          <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded-full font-semibold">Live!</span>
+        </div>
+        <p class="card-description mb-4">A lightweight market movement tracker. Monitors cryptocurrency volatility and
+          sends browser notifications when significant price movements occur. Built with Binance API. Clean interface
+          with dark and light themes.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-red-600 text-xs px-2 py-1 rounded">Movement Alerts</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">Binance API</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://chromewebstore.google.com/detail/crypto-pulse/nbjebefngkgdpahepdelncagiknhgchp"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Notes -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <div class="flex justify-between items-start">
+          <h3 class="text-2xl font-semibold mb-2">📝 Quick Notes</h3>
+          <span class="bg-green-700 text-white text-xs px-2 py-1 rounded-full font-semibold">Live!</span>
+        </div>
+        <p class="card-description mb-4">Simple, fast, local notes for yourself. No cloud, no login, no tracking. Just
+          open, write, save. All notes stored locally in your browser. Perfect for quick reminders, code snippets, or
+          anything you need to remember.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">Local Storage</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://github.com/ievgeniipodovinnikov/quick-notes" target="_blank"
+            class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition text-sm">
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+          <a href="https://chromewebstore.google.com/detail/quick-notes/leimoijdccoecdbglffjciheaikaeabe"
+            target="_blank"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Crypto Trading Assistant -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <div class="flex justify-between items-start">
+          <h3 class="text-2xl font-semibold mb-2">📈 Crypto Trading Assistant</h3>
+          <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Discovery</span>
+        </div>
+        <p class="card-description mb-4">Smart alerts for crypto traders. Set custom parameters — price thresholds,
+          volume spikes, RSI levels, and more. Get real-time notifications when conditions are met. Supports major
+          exchanges: Binance, Coinbase, Bybit. Perfect for traders who don't want to stare at charts all day.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Web App</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">Node.js</span>
+          <span class="bg-yellow-600 text-xs px-2 py-1 rounded">WebSocket</span>
+          <span class="bg-red-600 text-xs px-2 py-1 rounded">Crypto APIs</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">Real-time</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="#"
+            class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition text-sm opacity-50 cursor-not-allowed">
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+          <a href="#"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm opacity-50 cursor-not-allowed">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- Simple Proxy Monitor -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <div class="flex justify-between items-start">
+          <h3 class="text-2xl font-semibold mb-2">🕵️ Simple Proxy Monitor</h3>
+          <span class="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Beta</span>
+        </div>
+        <p class="card-description mb-4">Lightweight network traffic monitor for developers. Capture and inspect API
+          requests from emulators, simulators, or real devices. No JS/CSS clutter — only pure API calls. Filter by
+          method, status, or URL. View headers, request/response body. Perfect for mobile development and debugging.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">Proxy</span>
+          <span class="bg-yellow-600 text-xs px-2 py-1 rounded">DevTools</span>
+          <span class="bg-red-600 text-xs px-2 py-1 rounded">Network Monitor</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="#"
+            class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition text-sm opacity-50 cursor-not-allowed">
+            <i class="fab fa-github mr-2"></i>GitHub
+          </a>
+          <a href="#"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm opacity-50 cursor-not-allowed">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+      </div>
+
+      <!-- QA Helper -->
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <h3 class="text-2xl font-semibold mb-2">QA Helper</h3>
+        <p class="card-description mb-4">Chrome extension for QA engineers: capture bugs with screenshots, XPath,
+          environment data, and notes. History for last 10 captures. One-click from toolbar or right-click any element.
+          Auto screenshot, XPath, browser version, OS, URL, timestamp. Copy to clipboard for Jira, Trello, GitHub. Local
+          storage only, no servers, lightweight.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">Java</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
+        </div>
+        <div class="mt-4 flex gap-3">
+          <a href="https://chromewebstore.google.com/detail/qa-helper-%E2%80%94-bug-capture-t/dggnnodpemhlfpmfihoggaiednbjicbl"
+            target="_blank" rel="noopener noreferrer"
+            class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+            <i class="fab fa-chrome mr-2"></i>Chrome Store
+          </a>
+        </div>
+
+      </div>
+  </section>
+
+  <!-- Past Projects -->
+  <section class="px-6 py-16 bg-black bg-opacity-30 rounded-2xl mx-6 mb-8">
+    <h3 class="text-3xl font-bold text-center mb-12">📁 Past Projects</h3>
+    <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
+
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <h3 class="text-2xl font-semibold mb-2">Telegram Chatbots API</h3>
+        <p class="card-description mb-4">Custom Telegram bots with API integrations for business automation, customer
+          support, and internal tools.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Python</span>
+          <span class="bg-teal-600 text-xs px-2 py-1 rounded">Telegram API</span>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <h3 class="text-2xl font-semibold mb-2">API Test Automation Framework</h3>
+        <p class="card-description mb-4">Java-based framework for REST API testing with custom reporters, CI/CD
+          integration, and data-driven tests.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">Java</span>
+          <span class="bg-red-600 text-xs px-2 py-1 rounded">RestAssured</span>
+          <span class="bg-gray-600 text-xs px-2 py-1 rounded">Jenkins</span>
+        </div>
+      </div>
+
+      <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
+        <h3 class="text-2xl font-semibold mb-2">Vibe Coding Prototypes</h3>
+        <p class="card-description mb-4">Rapid prototypes for startups — MVPs built in days using modern stacks and
+          AI-assisted development.</p>
+        <div class="tech-tags">
+          <span class="bg-blue-600 text-xs px-2 py-1 rounded">React</span>
+          <span class="bg-green-600 text-xs px-2 py-1 rounded">Node.js</span>
+          <span class="bg-purple-600 text-xs px-2 py-1 rounded">AI Tools</span>
+        </div>
+        <a href="https://chromewebstore.google.com/detail/quick-notes/leimoijdccoecdbglffjciheaikaeabe" target="_blank"
+          class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
+          <i class="fab fa-chrome mr-2"></i>Chrome Store
         </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Products -->
-<section id="products" class="products-section">
-  <h3 class="text-3xl font-bold text-center mb-12">💡 Products</h3>
+  <script>
+    const domainInfo = {
+      "algoshark.pro": { price: 449, description: "Aggressive and powerful name, perfect for algo trading, AI bots, or crypto ventures." }
+    };
 
-  <div class="product-grid">
+    document.addEventListener("DOMContentLoaded", () => {
+      const domainName = window.location.hostname;
+      document.getElementById("selectedDomain").textContent = domainName;
+      document.getElementById("cardDomain").textContent = domainName;
+      if (domainInfo[domainName]) {
+        document.getElementById("cardPrice").textContent = `$${domainInfo[domainName].price}`;
+        document.getElementById("cardDescription").textContent = domainInfo[domainName].description;
+      }
+    });
 
-    <!-- 2MinPay -->
-    <div class="product-card group">
-      <div class="flex justify-between items-center">
-        <div class="product-title">2MinPay</div>
-        <span class="badge-live live-badge">Live</span>
-      </div>
-
-      <div class="product-desc">
-        Monetization infrastructure for developers. Stripe-based abstraction to integrate payments in minutes.
-      </div>
-
-      <div class="flex gap-2 flex-wrap">
-        <span class="tech-pill">Stripe</span>
-        <span class="tech-pill">Payments</span>
-        <span class="tech-pill">SDK</span>
-      </div>
-
-      <a href="https://2minpay.com" target="_blank" class="visit-btn">
-        Visit →
-      </a>
-    </div>
-
-    <!-- SynthDataGen -->
-    <div class="product-card group">
-      <div class="flex justify-between items-center">
-        <div class="product-title">SynthDataGen</div>
-        <span class="badge-live live-badge">Live</span>
-      </div>
-
-      <div class="product-desc">
-        Synthetic data generation tool for QA and AI testing. Build realistic datasets instantly.
-      </div>
-
-      <div class="flex gap-2 flex-wrap">
-        <span class="tech-pill">Data</span>
-        <span class="tech-pill">QA</span>
-        <span class="tech-pill">AI</span>
-      </div>
-
-      <a href="https://synthdatagen.xyz" target="_blank" class="visit-btn">
-        Visit →
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<section id="extensions" class="px-6 py-16">
-  <h3 class="text-3xl font-bold text-center mb-12">🚀 Chrome Extensions</h3>
-  <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
-
-<!-- RetroDeck - Konami-style retro game collection -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <div class="flex justify-between items-start">
-    <h3 class="text-2xl font-semibold mb-2">🎮 RetroDeck</h3>
-    <span class="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Playable</span>
-  </div>
-  <p class="card-description mb-4">Retro game collection as Chrome extension — Snake (Nokia style), Road Fighter, Flappy Bird, Life Force, Asteroids, Pinball, Space Invaders. Zero ROMs, 100% self-written JavaScript, offline-ready. Pick a card, play instantly.</p>
-  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-    <span class="bg-green-600 text-xs px-2 py-1 rounded">Vanilla JS</span>
-    <span class="bg-purple-600 text-xs px-2 py-1 rounded">Canvas API</span>
-    <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Offline-first</span>
-    <span class="bg-red-600 text-xs px-2 py-1 rounded">7 games</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-    <a href="https://chromewebstore.google.com/detail/retrodeck/bnbffpanpbnmedfnpmbbaoegfkhbopcj" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
-      <i class="fab fa-chrome mr-2"></i>Chrome Store
-    </a>
-  </div>
-</div>
-
-<!-- Fast API Tester -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <div class="flex justify-between items-start">
-    <h3 class="text-2xl font-semibold mb-2">⚡ Fast API Tester</h3>
-    <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Live!</span>
-  </div>
-  <p class="card-description mb-4">Lightweight Chrome extension for testing API endpoints. Supports GET/POST/PUT/DELETE/PATCH, custom headers, query parameters, JSON/Form/Text body, and stores last 10 requests with full history. Copy response, URL, or generate cURL commands instantly.</p>
-  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-    <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
-    <span class="bg-purple-600 text-xs px-2 py-1 rounded">REST API</span>
-    <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Fetch API</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-    <a href="https://chromewebstore.google.com/detail/fast-api-tester/figccmomgjinafphjmodpjpgkbiloicj"  target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
-      <i class="fab fa-chrome mr-2"></i>Chrome Store
-    </a>
-  </div>
-</div>
-
-    <!-- Earthquake Monitor -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <h3 class="text-2xl font-semibold mb-2">🌍 Earthquake Monitor</h3>
-  <p class="card-description mb-4">Chrome extension that tracks earthquakes in real-time. Shows earthquakes within a specified radius from your location with configurable magnitude threshold and instant notifications.</p>
-  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-    <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
-    <span class="bg-red-600 text-xs px-2 py-1 rounded">USGS API</span>
-    <span class="bg-yellow-600 text-xs px-2 py-1 rounded">Geolocation</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-    <a href="https://chromewebstore.google.com/detail/earthquake-monitor/akmnogijjjfdhcgpnmbplkinmogmnhkj" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
-      <i class="fab fa-chrome mr-2"></i>Chrome Store
-    </a>
-  </div>
-</div>
-
-<!-- Crypto Pulse -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <div class="flex justify-between items-start">
-    <h3 class="text-2xl font-semibold mb-2">📈 Crypto Pulse</h3>
-    <span class="bg-purple-600 text-white text-xs px-2 py-1 rounded-full font-semibold">Live!</span>
-  </div>
-<p class="card-description mb-4">A lightweight market movement tracker. Monitors cryptocurrency volatility and sends browser notifications when significant price movements occur. Built with Binance API. Clean interface with dark and light themes.</p>  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-    <span class="bg-red-600 text-xs px-2 py-1 rounded">Movement Alerts</span>
-    <span class="bg-purple-600 text-xs px-2 py-1 rounded">Binance API</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-  <a href="https://chromewebstore.google.com/detail/crypto-pulse/nbjebefngkgdpahepdelncagiknhgchp" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
-  <i class="fab fa-chrome mr-2"></i>Chrome Store
-  </a>
-  </div>
-</div>    
-
-<!-- Quick Notes -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <div class="flex justify-between items-start">
-    <h3 class="text-2xl font-semibold mb-2">📝 Quick Notes</h3>
-    <span class="bg-green-700 text-white text-xs px-2 py-1 rounded-full font-semibold">Live!</span>
-  </div>
-  <p class="card-description mb-4">Simple, fast, local notes for yourself. No cloud, no login, no tracking. Just open, write, save. All notes stored locally in your browser. Perfect for quick reminders, code snippets, or anything you need to remember.</p>
-  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-    <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
-    <span class="bg-purple-600 text-xs px-2 py-1 rounded">Local Storage</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-    <a href="https://github.com/ievgeniipodovinnikov/quick-notes" target="_blank" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition text-sm">
-      <i class="fab fa-github mr-2"></i>GitHub
-    </a>
-    <a href="https://chromewebstore.google.com/detail/quick-notes/leimoijdccoecdbglffjciheaikaeabe" target="_blank" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm">
-      <i class="fab fa-chrome mr-2"></i>Chrome Store
-    </a>
-  </div>
-</div>
-
-<!-- Crypto Trading Assistant -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <div class="flex justify-between items-start">
-    <h3 class="text-2xl font-semibold mb-2">📈 Crypto Trading Assistant</h3>
-    <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Discovery</span>
-  </div>
-  <p class="card-description mb-4">Smart alerts for crypto traders. Set custom parameters — price thresholds, volume spikes, RSI levels, and more. Get real-time notifications when conditions are met. Supports major exchanges: Binance, Coinbase, Bybit. Perfect for traders who don't want to stare at charts all day.</p>
-  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Web App</span>
-    <span class="bg-green-600 text-xs px-2 py-1 rounded">Node.js</span>
-    <span class="bg-yellow-600 text-xs px-2 py-1 rounded">WebSocket</span>
-    <span class="bg-red-600 text-xs px-2 py-1 rounded">Crypto APIs</span>
-    <span class="bg-purple-600 text-xs px-2 py-1 rounded">Real-time</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-    <a href="#" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition text-sm opacity-50 cursor-not-allowed">
-      <i class="fab fa-github mr-2"></i>GitHub
-    </a>
-    <a href="#" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm opacity-50 cursor-not-allowed">
-      <i class="fab fa-chrome mr-2"></i>Chrome Store
-    </a>
-  </div>
-</div>
-    
-<!-- Simple Proxy Monitor -->
-<div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-  <div class="flex justify-between items-start">
-    <h3 class="text-2xl font-semibold mb-2">🕵️ Simple Proxy Monitor</h3>
-    <span class="bg-green-500 text-white text-xs px-2 py-1 rounded-full font-semibold">Beta</span>
-  </div>
-  <p class="card-description mb-4">Lightweight network traffic monitor for developers. Capture and inspect API requests from emulators, simulators, or real devices. No JS/CSS clutter — only pure API calls. Filter by method, status, or URL. View headers, request/response body. Perfect for mobile development and debugging.</p>
-  <div class="tech-tags">
-    <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-    <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
-    <span class="bg-purple-600 text-xs px-2 py-1 rounded">Proxy</span>
-    <span class="bg-yellow-600 text-xs px-2 py-1 rounded">DevTools</span>
-    <span class="bg-red-600 text-xs px-2 py-1 rounded">Network Monitor</span>
-  </div>
-  <div class="mt-4 flex gap-3">
-    <a href="#" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-lg font-semibold hover:bg-gray-700 transition text-sm opacity-50 cursor-not-allowed">
-      <i class="fab fa-github mr-2"></i>GitHub
-    </a>
-    <a href="#" class="inline-block bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition text-sm opacity-50 cursor-not-allowed">
-      <i class="fab fa-chrome mr-2"></i>Chrome Store
-    </a>
-  </div>
-</div>
-
-    <!-- QA Helper -->
-    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-      <h3 class="text-2xl font-semibold mb-2">QA Helper</h3>
-      <p class="card-description mb-4">Chrome extension for QA engineers: capture bugs with screenshots, XPath, environment data, and notes. History for last 10 captures. One-click from toolbar or right-click any element. Auto screenshot, XPath, browser version, OS, URL, timestamp. Copy to clipboard for Jira, Trello, GitHub. Local storage only, no servers, lightweight.</p>
-      <div class="tech-tags">
-        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Chrome Extension</span>
-        <span class="bg-purple-600 text-xs px-2 py-1 rounded">Java</span>
-        <span class="bg-green-600 text-xs px-2 py-1 rounded">JavaScript</span>
-      </div>
-    </div>
-</section>
-
-<!-- Past Projects -->
-<section class="px-6 py-16 bg-black bg-opacity-30 rounded-2xl mx-6 mb-8">
-  <h3 class="text-3xl font-bold text-center mb-12">📁 Past Projects</h3>
-  <div class="flex justify-center gap-8 max-w-6xl mx-auto flex-wrap">
-    
-    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-      <h3 class="text-2xl font-semibold mb-2">Telegram Chatbots API</h3>
-      <p class="card-description mb-4">Custom Telegram bots with API integrations for business automation, customer support, and internal tools.</p>
-      <div class="tech-tags">
-        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Python</span>
-        <span class="bg-teal-600 text-xs px-2 py-1 rounded">Telegram API</span>
-      </div>
-    </div>
-
-    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-      <h3 class="text-2xl font-semibold mb-2">API Test Automation Framework</h3>
-      <p class="card-description mb-4">Java-based framework for REST API testing with custom reporters, CI/CD integration, and data-driven tests.</p>
-      <div class="tech-tags">
-        <span class="bg-blue-600 text-xs px-2 py-1 rounded">Java</span>
-        <span class="bg-red-600 text-xs px-2 py-1 rounded">RestAssured</span>
-        <span class="bg-gray-600 text-xs px-2 py-1 rounded">Jenkins</span>
-      </div>
-    </div>
-
-    <div class="card rounded-2xl p-6 shadow-lg w-full sm:w-1/2 md:w-1/3 project-card">
-      <h3 class="text-2xl font-semibold mb-2">Vibe Coding Prototypes</h3>
-      <p class="card-description mb-4">Rapid prototypes for startups — MVPs built in days using modern stacks and AI-assisted development.</p>
-      <div class="tech-tags">
-        <span class="bg-blue-600 text-xs px-2 py-1 rounded">React</span>
-        <span class="bg-green-600 text-xs px-2 py-1 rounded">Node.js</span>
-        <span class="bg-purple-600 text-xs px-2 py-1 rounded">AI Tools</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const domainInfo = {
-    "algoshark.pro": { price: 449, description: "Aggressive and powerful name, perfect for algo trading, AI bots, or crypto ventures." }
-  };
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const domainName = window.location.hostname;
-    document.getElementById("selectedDomain").textContent = domainName;
-    document.getElementById("cardDomain").textContent = domainName;
-    if (domainInfo[domainName]) {
-      document.getElementById("cardPrice").textContent = `$${domainInfo[domainName].price}`;
-      document.getElementById("cardDescription").textContent = domainInfo[domainName].description;
+    function openPopup(domain) {
+      document.getElementById("buyModal").classList.remove("hidden");
+      document.getElementById("selectedDomain").textContent = domain;
+      document.getElementById("namecheapLink").href = `https://www.namecheap.com/domains/registration/results/?domain=${domain}`;
     }
-  });
+    function closePopup() { document.getElementById("buyModal").classList.add("hidden"); }
+    function openNamecheapLink() { window.open(document.getElementById("namecheapLink").href, "_blank"); }
+  </script>
 
-  function openPopup(domain) {
-    document.getElementById("buyModal").classList.remove("hidden");
-    document.getElementById("selectedDomain").textContent = domain;
-    document.getElementById("namecheapLink").href = `https://www.namecheap.com/domains/registration/results/?domain=${domain}`;
-  }
-  function closePopup() { document.getElementById("buyModal").classList.add("hidden"); }
-  function openNamecheapLink() { window.open(document.getElementById("namecheapLink").href, "_blank"); }
-</script>
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-10">
 
-<!-- Footer -->
-<footer class="text-center text-gray-500 text-sm py-10">
+    <!-- Contact email block -->
+    <div class="mb-6">
+      <div
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-teal-400 bg-white shadow-sm text-teal-700 font-medium">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:me@ievgenii.com" class="hover:underline">
+          me@ievgenii.com
+        </a>
+      </div>
+    </div>
 
-  <!-- Contact email block -->
-  <div class="mb-6">
-    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-teal-400 bg-white shadow-sm text-teal-700 font-medium">
-      <i class="fas fa-envelope"></i>
-      <a href="mailto:me@ievgenii.com" class="hover:underline">
-        me@ievgenii.com
+    <!-- Social -->
+    <div class="mt-4 text-xs">
+      <a href="https://x.com/ipodovinnikov" target="_blank" class="text-white hover:text-blue-400 transition">
+        <i class="fab fa-twitter text-xl"></i>
+        <span class="ml-2">Follow me on X</span>
       </a>
     </div>
-  </div>
 
-  <!-- Social -->
-  <div class="mt-4 text-xs">
-    <a href="https://x.com/ipodovinnikov" target="_blank" class="text-white hover:text-blue-400 transition">
-      <i class="fab fa-twitter text-xl"></i>
-      <span class="ml-2">Follow me on X</span>
-    </a>
-  </div>
+    <div class="mt-2">
+      &copy; 2026 Ievgenii Podovinnikov. All rights reserved.
+    </div>
 
-  <div class="mt-2">
-    &copy; 2026 Ievgenii Podovinnikov. All rights reserved.
-  </div>
-
-</footer>
+  </footer>
 </body>
+
 </html>
